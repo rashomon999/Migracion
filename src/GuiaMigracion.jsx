@@ -31,6 +31,9 @@ const GuiaMigracionCompleta = () => {
         <p className="text-sm mt-2 opacity-90">Información actualizada a noviembre 2025</p>
       </div>
 
+
+ 
+
       <div className="bg-gradient-to-br from-blue-600 to-purple-700 text-white p-6 rounded-lg shadow-lg">
         <h3 className="text-2xl font-bold mb-4">🎯 Encuentra tu ruta</h3>
         <p className="mb-4">Cada situación es diferente. Selecciona la tuya:</p>
@@ -92,6 +95,20 @@ const GuiaMigracionCompleta = () => {
           <p className="text-sm text-gray-700">Puedes cruzar por tierra con solo cédula</p>
         </div>
       </div>
+
+          {/* AQUÍ AGREGAS LA IMAGEN */}
+    <div className="bg-white p-6 rounded-lg shadow-lg">
+      <h3 className="text-xl font-bold mb-4 text-gray-800">📊 Estadísticas de Migración</h3>
+      <p>Al planificar tu llegada a Colombia, es útil conocer las regiones con mayor concentración de venezolanos. Estas zonas no solo ofrecen redes de apoyo, sino que también suelen ser puntos estratégicos de comercio y actividad económica, donde es más fácil encontrar trabajo, emprendimientos o negocios que atienden a la comunidad venezolana.
+
+</p>
+      <img 
+        src="/estadisticas.png" 
+        alt="Estadísticas de migración Venezuela-Colombia"
+        className="w-full h-auto rounded-lg"
+      />
+    </div>
+
     </div>
   );
 
@@ -125,28 +142,129 @@ const GuiaMigracionCompleta = () => {
         <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded">
           <h4 className="font-bold text-blue-800 mb-3">Migrante económico</h4>
           
-          <div className="bg-white p-4 rounded mb-4">
+                    <div className="bg-white p-4 rounded mb-4">
             <h5 className="font-semibold text-gray-800 mb-3 text-sm">🚶 Pasos fronterizos oficiales</h5>
             <p className="text-xs text-gray-700 mb-3">Usa SOLO estos puntos de control migratorio:</p>
-            <div className="space-y-2">
-              <div className="bg-green-50 p-2 rounded text-xs">
-                <p className="font-semibold text-green-800">✅ Puente Simón Bolívar</p>
-                <p className="text-gray-600">San Antonio del Táchira → Villa del Rosario (Cúcuta)</p>
-                <p className="text-gray-500 text-xs">El más transitado, 24/7</p>
+            
+            {/* Mapa visual simplificado */}
+            <div className="bg-gradient-to-br from-blue-50 to-green-50 p-4 rounded-lg mb-4 border-2 border-blue-200">
+              <div className="relative h-48 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="inline-block bg-yellow-400 text-yellow-900 px-4 py-2 rounded-lg font-bold text-sm mb-2">
+                      🇻🇪 VENEZUELA
+                    </div>
+                    <div className="flex items-center justify-center gap-8 my-4">
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-green-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-xs font-semibold">Táchira</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-green-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-xs font-semibold">Zulia</div>
+                      </div>
+                    </div>
+                    <div className="border-t-2 border-dashed border-gray-400 w-64 mx-auto my-2"></div>
+                    <div className="flex items-center justify-center gap-8 my-4">
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-blue-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-xs font-semibold">Norte de Santander</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-blue-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-xs font-semibold">La Guajira</div>
+                      </div>
+                    </div>
+                    <div className="inline-block bg-blue-400 text-blue-900 px-4 py-2 rounded-lg font-bold text-sm mt-2">
+                      🇨🇴 COLOMBIA
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="bg-green-50 p-2 rounded text-xs">
-                <p className="font-semibold text-green-800">✅ Puente Francisco de Paula Santander</p>
-                <p className="text-gray-600">Ureña → Cúcuta</p>
+              <p className="text-center text-xs text-gray-600 mt-2">Principales zonas de cruce oficial</p>
+            </div>
+
+            <div className="space-y-3">
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Puente Simón Bolívar</p>
+                    <p className="text-gray-600 text-xs">San Antonio del Táchira → Villa del Rosario (Cúcuta)</p>
+                  </div>
+                  <span className="bg-green-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">PRINCIPAL</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-green-700">24/7</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Flujo</p>
+                    <p className="font-semibold text-green-700">Alto</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 El más transitado y con más servicios cercanos</p>
               </div>
-              <div className="bg-green-50 p-2 rounded text-xs">
-                <p className="font-semibold text-green-800">✅ Paraguachón</p>
-                <p className="text-gray-600">Zulia → La Guajira</p>
-                <p className="text-gray-500 text-xs">Para ir a Maicao, Riohacha, Barranquilla</p>
+
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Puente Francisco de Paula Santander</p>
+                    <p className="text-gray-600 text-xs">Ureña → Cúcuta</p>
+                  </div>
+                  <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">ALTERNATIVO</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-blue-700">6am-6pm</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Flujo</p>
+                    <p className="font-semibold text-blue-700">Medio</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 Menos congestionado que Simón Bolívar</p>
+              </div>
+
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Paraguachón</p>
+                    <p className="text-gray-600 text-xs">Zulia → La Guajira</p>
+                  </div>
+                  <span className="bg-orange-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">COSTA</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-orange-700">24/7</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Destino</p>
+                    <p className="font-semibold text-orange-700">Caribe</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 Para Maicao, Riohacha, Barranquilla, Santa Marta</p>
               </div>
             </div>
-            <div className="bg-red-50 p-2 rounded mt-2 text-xs">
-              <p className="font-semibold text-red-700">❌ NUNCA uses trochas:</p>
-              <p className="text-red-600">Controladas por ELN, FARC. Riesgo de extorsión, secuestro. Quedarás IRREGULAR.</p>
+
+            <div className="bg-red-50 p-3 rounded mt-3 border-2 border-red-400">
+              <p className="font-semibold text-red-700 text-sm mb-2">❌ NUNCA uses trochas:</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Grupos armados</p>
+                  <p className="text-xs text-gray-600">ELN, FARC disidentes</p>
+                </div>
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Extorsión</p>
+                  <p className="text-xs text-gray-600">Cobros ilegales, robos</p>
+                </div>
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Status irregular</p>
+                  <p className="text-xs text-gray-600">Riesgo de deportación</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -376,6 +494,146 @@ const GuiaMigracionCompleta = () => {
             </button>
           ))}
         </div>
+
+          <div className="bg-white p-4 rounded mb-4">
+            <h5 className="font-semibold text-gray-800 mb-3 text-sm">🚶 Pasos fronterizos oficiales</h5>
+            <p className="text-xs text-gray-700 mb-3">Usa SOLO estos puntos de control migratorio:</p>
+            
+            {/* Mapa visual simplificado */}
+            <div className="bg-gradient-to-br from-blue-50 to-green-50 p-4 rounded-lg mb-4 border-2 border-blue-200">
+  <div className="relative h-96 flex items-center justify-center">
+    <img 
+      src="frontera.png" 
+      alt="Mapa de pasos fronterizos Venezuela-Colombia"
+      className="w-full h-full object-contain rounded-lg"
+    />
+  </div>
+  <p className="text-center text-xs text-gray-600 mt-2">Principales zonas de cruce oficial</p>
+</div>
+
+
+<div className="bg-gradient-to-br from-blue-50 to-green-50 p-4 rounded-lg mb-4 border-2 border-blue-200">
+              <div className="relative h-48 flex items-center justify-center">
+                  
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="inline-block bg-yellow-400 text-yellow-900 px-4 py-2 rounded-lg font-bold text-sm mb-2">
+                      🇻🇪 VENEZUELA
+                    </div>
+                    <div className="flex items-center justify-center gap-8 my-4">
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-green-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-gray-600 text-xs">Táchira</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-green-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-gray-600 text-xs">Zulia</div>
+                      </div>
+                    </div>
+                    <div className="border-t-2 border-dashed border-gray-400 w-64 mx-auto my-2"></div>
+                    <div className="flex items-center justify-center gap-8 my-4">
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-blue-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-gray-600 text-xs">Norte de Santander</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="w-3 h-3 bg-blue-500 rounded-full mx-auto mb-1 animate-pulse"></div>
+                        <div className="text-gray-600 text-xs">La Guajira</div>
+                      </div>
+                    </div>
+                    <div className="inline-block bg-blue-400 text-blue-900 px-4 py-2 rounded-lg font-bold text-sm mt-2">
+                      🇨🇴 COLOMBIA
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-center text-xs text-gray-600 mt-2">Principales zonas de cruce oficial</p>
+            </div>
+
+            <div className="space-y-3">
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Puente Simón Bolívar</p>
+                    <p className="text-gray-600 text-xs">San Antonio del Táchira → Villa del Rosario (Cúcuta)</p>
+                  </div>
+                  <span className="bg-green-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">PRINCIPAL</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-green-700">24/7</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Flujo</p>
+                    <p className="font-semibold text-green-700">Alto</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 El más transitado y con más servicios cercanos</p>
+              </div>
+
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Puente Francisco de Paula Santander</p>
+                    <p className="text-gray-600 text-xs">Ureña → Cúcuta</p>
+                  </div>
+                  <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">ALTERNATIVO</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-blue-700">6am-6pm</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Flujo</p>
+                    <p className="font-semibold text-blue-700">Medio</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 Menos congestionado que Simón Bolívar</p>
+              </div>
+
+              <div className="bg-green-50 p-3 rounded-lg border-l-4 border-green-500">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <p className="font-semibold text-green-800 text-sm">✅ Paraguachón</p>
+                    <p className="text-gray-600 text-xs">Zulia → La Guajira</p>
+                  </div>
+                  <span className="bg-orange-600 text-white text-xs px-2 py-1 rounded font-semibold ml-2">COSTA</span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Horario</p>
+                    <p className="font-semibold text-orange-700">24/7</p>
+                  </div>
+                  <div className="bg-white p-2 rounded text-xs">
+                    <p className="text-gray-500">Destino</p>
+                    <p className="font-semibold text-orange-700">Caribe</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-600 mt-2">🎯 Para Maicao, Riohacha, Barranquilla, Santa Marta</p>
+              </div>
+            </div>
+
+            <div className="bg-red-50 p-3 rounded mt-3 border-2 border-red-400">
+              <p className="font-semibold text-red-700 text-sm mb-2">❌ NUNCA uses trochas:</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Grupos armados</p>
+                  <p className="text-xs text-gray-600">ELN, FARC disidentes</p>
+                </div>
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Extorsión</p>
+                  <p className="text-xs text-gray-600">Cobros ilegales, robos</p>
+                </div>
+                <div className="bg-white p-2 rounded">
+                  <p className="text-xs font-semibold text-red-700">⚠️ Status irregular</p>
+                  <p className="text-xs text-gray-600">Riesgo de deportación</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
       </div>
 
       {tienePasaporte === true && (
