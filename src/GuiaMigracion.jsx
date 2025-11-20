@@ -124,7 +124,61 @@ const GuiaMigracionCompleta = () => {
       {motivoMigracion === 'economico' && (
         <div className="bg-blue-50 border-l-4 border-blue-500 p-5 rounded">
           <h4 className="font-bold text-blue-800 mb-3">Migrante económico</h4>
-          <p className="text-gray-700 mb-3 text-sm">Opciones disponibles:</p>
+          
+          <div className="bg-white p-4 rounded mb-4">
+            <h5 className="font-semibold text-gray-800 mb-3 text-sm">🚶 Pasos fronterizos oficiales</h5>
+            <p className="text-xs text-gray-700 mb-3">Usa SOLO estos puntos de control migratorio:</p>
+            <div className="space-y-2">
+              <div className="bg-green-50 p-2 rounded text-xs">
+                <p className="font-semibold text-green-800">✅ Puente Simón Bolívar</p>
+                <p className="text-gray-600">San Antonio del Táchira → Villa del Rosario (Cúcuta)</p>
+                <p className="text-gray-500 text-xs">El más transitado, 24/7</p>
+              </div>
+              <div className="bg-green-50 p-2 rounded text-xs">
+                <p className="font-semibold text-green-800">✅ Puente Francisco de Paula Santander</p>
+                <p className="text-gray-600">Ureña → Cúcuta</p>
+              </div>
+              <div className="bg-green-50 p-2 rounded text-xs">
+                <p className="font-semibold text-green-800">✅ Paraguachón</p>
+                <p className="text-gray-600">Zulia → La Guajira</p>
+                <p className="text-gray-500 text-xs">Para ir a Maicao, Riohacha, Barranquilla</p>
+              </div>
+            </div>
+            <div className="bg-red-50 p-2 rounded mt-2 text-xs">
+              <p className="font-semibold text-red-700">❌ NUNCA uses trochas:</p>
+              <p className="text-red-600">Controladas por ELN, FARC. Riesgo de extorsión, secuestro. Quedarás IRREGULAR.</p>
+            </div>
+          </div>
+
+          <div className="bg-white p-4 rounded mb-4">
+            <h5 className="font-semibold text-gray-800 mb-3 text-sm">📖 Entiende estos términos</h5>
+            <div className="space-y-3">
+              <div className="border-l-4 border-green-500 bg-green-50 p-3 rounded">
+                <p className="font-bold text-green-800 text-xs mb-1">✅ REGULAR</p>
+                <p className="text-xs text-gray-700 mb-2">Entraste por paso oficial con sello de Migración Colombia. Tienes:</p>
+                <ul className="text-xs text-gray-600 ml-4 space-y-1">
+                  <li>• PIP (90 días de turista)</li>
+                  <li>• PPT (permiso hasta 2031)</li>
+                  <li>• Visa colombiana</li>
+                  <li>• Salvoconducto de refugio</li>
+                </ul>
+                <p className="text-xs text-green-700 font-semibold mt-2">Puedes trabajar (solo con PPT/visa), acceder a salud, educación.</p>
+              </div>
+              
+              <div className="border-l-4 border-red-500 bg-red-50 p-3 rounded">
+                <p className="font-bold text-red-800 text-xs mb-1">❌ IRREGULAR</p>
+                <p className="text-xs text-gray-700 mb-2">Entraste sin registro oficial o se venció tu permiso. Significa:</p>
+                <ul className="text-xs text-gray-600 ml-4 space-y-1">
+                  <li>• Cruzaste por trocha</li>
+                  <li>• Tu PIP expiró (pasaron 90+ días)</li>
+                  <li>• No tienes documento migratorio vigente</li>
+                </ul>
+                <p className="text-xs text-red-700 font-semibold mt-2">NO puedes trabajar legal, riesgo de deportación, sin acceso a servicios.</p>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-gray-700 mb-3 text-sm">Opciones de regularización disponibles:</p>
           <ul className="text-sm text-gray-700 space-y-2">
             <li>• <strong>Visa V de Visitante Especial:</strong> Si entraste antes del 4 dic 2024</li>
             <li>• <strong>Visa de trabajo (Tipo M):</strong> Si tienes oferta laboral</li>
@@ -136,7 +190,6 @@ const GuiaMigracionCompleta = () => {
           </div>
         </div>
       )}
-
       {motivoMigracion === 'refugio' && (
         <div className="bg-indigo-50 border-l-4 border-indigo-500 p-5 rounded">
           <h4 className="font-bold text-indigo-800 mb-3">Solicitante de refugio</h4>
