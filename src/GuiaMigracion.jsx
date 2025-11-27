@@ -720,6 +720,39 @@ const GuiaMigracionCompleta = () => {
           <li>• No podrás regularizarte</li>
         </ul>
       </div>
+
+    <div className="bg-white p-4 rounded-lg shadow border-l-4 border-blue-500">
+  <h3 className="font-bold text-blue-800 mb-2 text-sm">ℹ️ Cómo ingresar a Colombia</h3>
+
+  <p className="text-xs text-gray-700 mb-2">
+    Para ingresar a los municipios fronterizos entre Venezuela y Colombia, el 
+    Instructivo Integral de Frontera establece que se aceptan los siguientes documentos:
+    <strong> pasaporte (vigente o vencido hasta 10 años), cédula de identidad venezolana,
+    PEP, PPT y la Tarjeta de Movilidad Fronteriza (TMF)</strong>.
+  </p>
+
+  <p className="text-xs text-gray-700 mb-2">
+    La <strong>cédula venezolana</strong> puede usarse para entrar a zona de frontera 
+    (como Cúcuta, Villa del Rosario o Maicao), pero esta facilidad solo permite
+    permanencia limitada a la franja fronteriza y por periodos cortos 
+    (generalmente hasta 7 días según lineamientos locales).
+  </p>
+
+  <p className="text-xs text-gray-700 mb-2">
+    La <strong>Resolución 2231 de 2021</strong> de la Cancillería establece que los pasaportes 
+    venezolanos vencidos, hasta por 10 años, son válidos para ingresar, transitar y permanecer 
+    en territorio colombiano.
+  </p>
+
+  <p className="text-xs text-gray-700">
+    🔍 Importante: La <strong>TMF</strong> y la entrada con cédula venezolana 
+    <strong>no permiten viajar al interior de Colombia</strong>. Solo habilitan movilidad 
+    dentro de la zona fronteriza. Para desplazarte a otras ciudades o viajar en avión es 
+    obligatorio usar pasaporte y hacer control migratorio oficial.
+  </p>
+</div>
+
+
     </div>
   );
 
@@ -1197,6 +1230,28 @@ const GuiaMigracionCompleta = () => {
           ))}
         </div>
       </div>
+
+
+      {/* Nuevo grupo agregado */}
+        <div className="bg-white border border-green-200 p-3 rounded mb-3">
+          <p className="font-semibold text-sm mb-1 text-green-800">Grupo: Venezolanos en Colombia 🇻🇪🇨🇴</p>
+          <a
+            href="https://chat.whatsapp.com/HctRiXeikl98UJ1G9hpdxZ?mode=ems_copy_c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-700 text-xs flex items-center"
+          >
+            <ExternalLink size={12} className="mr-1" />
+            Abrir grupo en WhatsApp
+          </a>
+
+           <img 
+        src="/grupo.png" 
+        alt="Estadísticas de migración Venezuela-Colombia"
+        className="w-full h-auto rounded-lg"
+      />
+        </div>
+
     </div>
   );
 
