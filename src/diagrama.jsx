@@ -41,7 +41,7 @@ export default function MigrantsDecisionTree() {
       ]
     },
 
-    s2a1: {
+   s2a1: {
   title: '🛡️ RUTA DE REFUGIO – Protección Internacional',
   type: 'recommendation',
   content: {
@@ -315,6 +315,7 @@ Debes:
 
   nextOptions: [{ value: 'inicio', label: 'Volver al inicio' }]
 },
+
 
 
     s2a2: {
